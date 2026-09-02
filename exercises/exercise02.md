@@ -209,7 +209,7 @@ since some rows use that instead of actual data.
 
 ### Screenshot
 
-![Question 10 Screenshot](screenshots/Question%210.png)
+![Question 10 Screenshot](screenshots/Question%2010.png)
 
 ---
 
@@ -228,4 +228,4 @@ _Hint: The result should be approximately 0.4%._
 
 ### Screenshot
 
-![Question 11 Screenshot](screenshots/Question%211.png)
+![Question 11 Screenshot](screenshots/Question%2011.png)
