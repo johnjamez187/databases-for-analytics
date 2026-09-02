@@ -52,7 +52,7 @@ along with the **name of each language spoken in that country**.
 
 ### Screenshot
 
-![Q2 Screenshot](screenshots/q2_country_languages.png)
+![Question 2 Screenshot](screenshots/Question%202.png)
 
 ---
 
@@ -70,7 +70,7 @@ of each **official language spoken in that country**.
 
 ### Screenshot
 
-![Q3 Screenshot](screenshots/q3_official_languages.png)
+![Question 3 Screenshot](screenshots/Question%203.png))
 
 ---
 
@@ -114,7 +114,7 @@ Do **not** repeat any form of government more than once.
 
 ### Screenshot
 
-![Q5 Screenshot](screenshots/q5_government_forms.png)
+![Question 5 Screenshot](screenshots/Question%205.png)
 
 ---
 
@@ -132,8 +132,7 @@ Label the column **"City or Country Name"**.
 
 ### Screenshot
 
-![Q6 Screenshot](screenshots/q6_union_city_country.png)
-
+![Question 6 Screenshot](screenshots/Question%206.png)
 ---
 
 ## Question 7
@@ -151,7 +150,7 @@ Be sure to **sort by country name**.
 
 ### Screenshot
 
-![Q7 Screenshot](screenshots/q7_language_count_by_country.png)
+![Question 7 Screenshot](screenshots/Question%207.png)
 
 ---
 
@@ -170,7 +169,7 @@ Be sure to **sort by language name**.
 
 ### Screenshot
 
-![Q8 Screenshot](screenshots/q8_language_country_count.png)
+![Question 8 Screenshot](screenshots/Question%208.png)
 
 ---
 
@@ -190,7 +189,7 @@ _Hint: There are 8 such countries in this dataset._
 
 ### Screenshot
 
-![Q9 Screenshot](screenshots/q9_multiple_official_languages.png)
+![Question 9 Screenshot](screenshots/Question%209.png)
 
 ---
 
@@ -210,7 +209,7 @@ since some rows use that instead of actual data.
 
 ### Screenshot
 
-![Q10 Screenshot](screenshots/q10_missing_districts.png)
+![Question 10 Screenshot](screenshots/Question%210.png)
 
 ---
 
@@ -229,4 +228,4 @@ _Hint: The result should be approximately 0.4%._
 
 ### Screenshot
 
-![Q11 Screenshot](screenshots/q11_missing_district_percentage.png)
+![Question 11 Screenshot](screenshots/Question%211.png)
