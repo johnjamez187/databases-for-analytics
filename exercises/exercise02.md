@@ -96,7 +96,7 @@ ON country.code = countrylanguage.countrycode;
 
 ### Answer
 
-_Write your explanation here._
+The second option allows for all null sets to be added to the data set that is retreived. 
 
 ---
 
