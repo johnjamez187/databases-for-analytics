@@ -34,7 +34,7 @@ _Show evidence of how you determined this (for example, a COUNT query)._
 -- Your SQL here
 ```
 
-![Q1 Screenshot](screenshots/q1-city-count.png)
+![Question 1 Screenshot](screenshots/Question%201.png)
 
 ---
 
