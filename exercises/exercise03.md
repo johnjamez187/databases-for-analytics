@@ -53,7 +53,7 @@ Before writing queries on the data,
 ### MongoDB Command
 
 ```javascript
-// Your MongoDB command here
+use("44661")
 ```
 
 ### Screenshot
@@ -72,7 +72,7 @@ write the MongoDB query needed to
 ### MongoDB Query
 
 ```javascript
-// Your MongoDB query here
+db.restaurants.find({ borough: "Queens" })
 ```
 
 ### Screenshot
@@ -91,7 +91,7 @@ write the MongoDB query needed to
 ### MongoDB Query
 
 ```javascript
-// Your MongoDB query here
+db.restaurants.countDocuments({ borough: "Queens"})
 ```
 
 ### Screenshot
@@ -111,7 +111,10 @@ write the MongoDB query needed to
 ### MongoDB Query
 
 ```javascript
-// Your MongoDB query here
+db.restaurants.countDocuments({
+  borough: "Queens",
+  cuisine: "Hamburgers"
+})
 ```
 
 ### Screenshot
@@ -132,7 +135,10 @@ _Hint: Look up how to query **embedded documents**._
 ### MongoDB Query
 
 ```javascript
-// Your MongoDB query here
+db.restaurants.countDocuments({
+  borough: "Queens",
+  cuisine: "Hamburgers"
+})
 ```
 
 ### Screenshot
@@ -164,7 +170,10 @@ Your output should resemble:
 ### MongoDB Query
 
 ```javascript
-// Your MongoDB query here
+db.restaurants.find(
+  { "address.zipcode": "10460" },
+  { _id: 0, name: 1 }
+)
 ```
 
 ### Screenshot
@@ -189,7 +198,10 @@ Your results should include:
 ### MongoDB Query
 
 ```javascript
-// Your MongoDB query here
+db.restaurants.find(
+  { name: { $regex: "IHOP", $options: "i" } },
+  { _id: 0, name: 1 }
+)
 ```
 
 ### Screenshot
