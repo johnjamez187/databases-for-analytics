@@ -100,7 +100,12 @@ to produce the following graph:
 ### Python Code
 
 ```python
-# Your Python code here
+df.plot(
+    kind="bar",
+    x="name",
+    y="num_languages",
+    rot=90
+)
 ```
 
 ### Screenshot
