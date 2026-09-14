@@ -56,7 +56,30 @@ execute the query from Question 1 and
 ### Python Code
 
 ```python
-# Your three Python statements here
+
+Define the SQL query
+
+query = """
+SELECT
+    c.name AS country,
+    COUNT(cl.language) AS official_languages
+FROM country AS c
+JOIN countrylanguage AS cl
+    ON c.code = cl.countrycode
+WHERE cl.isofficial = 'T'
+GROUP BY c.name
+HAVING COUNT(cl.language) > 2
+ORDER BY official_languages DESC;
+"""
+
+Execute the query and store the results
+
+df = pd.read_sql(query, engine)
+
+Display the Results
+
+display(df)
+
 ```
 
 ### Screenshot
