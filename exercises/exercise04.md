@@ -34,7 +34,16 @@ along with the **number of official languages spoken**.
 ### SQL
 
 ```sql
--- Your SQL here
+SELECT
+    c.name AS country,
+    COUNT(cl.language) AS official_languages
+FROM country AS c
+JOIN countrylanguage AS cl
+    ON c.code = cl.countrycode
+WHERE cl.isofficial = 'T'
+GROUP BY c.name
+HAVING COUNT(cl.language) > 2
+ORDER BY official_languages DESC;
 ```
 
 ### Screenshot
