@@ -40,7 +40,8 @@ _Show evidence of how you determined this (for example, a count query)._
 // Your MongoDB command here
 ```
 
-![Q1 Screenshot](screenshots/q1_document_count.png)
+![Exercise 3 Question 1](screenshots/Exercise%203%20Question%201.png)
+
 
 ---
 
@@ -58,7 +59,7 @@ use("44661")
 
 ### Screenshot
 
-<img width="929" height="680" alt="Question 2" src="https://github.com/user-attachments/assets/521fdbac-8e81-4763-89fa-9952edd692c2" />
+![Exercise 3 Question 2](screenshots/Exercise%203%20Question%202.png)
 
 
 ---
@@ -77,7 +78,7 @@ db.restaurants.find({ borough: "Queens" })
 
 ### Screenshot
 
-<img width="954" height="783" alt="Question 3" src="https://github.com/user-attachments/assets/4550460a-0839-420e-8415-e489733fce14" />
+![Exercise 3 Question 3](screenshots/Exercise%203%20Question%203.png)
 
 
 ---
@@ -96,7 +97,7 @@ db.restaurants.countDocuments({ borough: "Queens"})
 
 ### Screenshot
 
-<img width="775" height="546" alt="Question 4" src="https://github.com/user-attachments/assets/17c3d4bb-f274-449d-9a99-affcde801195" />
+![Exercise 3 Question 4](screenshots/Exercise%203%20Question%204.png)
 
 
 ---
@@ -119,7 +120,7 @@ db.restaurants.countDocuments({
 
 ### Screenshot
 
-<img width="765" height="578" alt="Question 5" src="https://github.com/user-attachments/assets/240bafd1-f6bb-45de-86cc-e757a7b2d154" />
+![Exercise 3 Question 5](screenshots/Exercise%203%20Question%205.png)
 
 
 ---
@@ -143,7 +144,8 @@ db.restaurants.countDocuments({
 
 ### Screenshot
 
-<img width="710" height="481" alt="Question 6" src="https://github.com/user-attachments/assets/f00b5311-5b82-4c17-9bf8-9082155dc2e9" />
+![Exercise 3 Question 6](screenshots/Exercise%203%20Question%206.png)
+
 
 
 ---
@@ -178,8 +180,7 @@ db.restaurants.find(
 
 ### Screenshot
 
-<img width="956" height="820" alt="Question 7" src="https://github.com/user-attachments/assets/b8e2e13c-b9c0-417f-a79c-cb23409c5ad5" />
-
+![Exercise 3 Question 7](screenshots/Exercise%203%20Question%207.png)
 
 ---
 
@@ -206,5 +207,4 @@ db.restaurants.find(
 
 ### Screenshot
 
-<img width="876" height="841" alt="Question 8" src="https://github.com/user-attachments/assets/04ae2765-ed76-4430-9027-3761ce142673" />
-
+![Exercise 3 Question 8](screenshots/Exercise%203%20Question%208.png)
