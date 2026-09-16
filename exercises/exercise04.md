@@ -48,7 +48,7 @@ ORDER BY official_languages DESC;
 
 ### Screenshot
 
-<img width="940" height="911" alt="Question 1" src="https://github.com/user-attachments/assets/7c146dbf-2065-4bc1-bd85-6321daa15da9" />
+![Exercise 4 Question 1](screenshots/Exercise%204%20Question%201.png)
 
 
 ---
@@ -94,7 +94,7 @@ display(df)
 
 ### Screenshot
 
-<img width="566" height="393" alt="Question 2" src="https://github.com/user-attachments/assets/b7753b69-bc32-4fce-a959-2c065b7fd9bf" />
+![Exercise 4 Question 2](screenshots/Exercise%204%20Question%202.png)
 
 
 ---
@@ -121,5 +121,4 @@ df.plot(
 
 ### Screenshot
 
-<img width="734" height="843" alt="Question 3" src="https://github.com/user-attachments/assets/3ea3dc00-324a-478a-9760-77ab92fc8fb5" />
-
+![Exercise 4 Question 3](screenshots/Exercise%204%20Question%203.png)
