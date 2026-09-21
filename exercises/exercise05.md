@@ -53,7 +53,7 @@ ORDER BY year;
 
 ### Screenshot
 
-![Question 1 Screenshot](<../screenshots/Exercise 5 Question 1.png>)
+![Question 1 Screenshot](../screenshots/Exercise%205%20Question%201.png)
 
 
 
