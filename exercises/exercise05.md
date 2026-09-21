@@ -71,7 +71,12 @@ count   year
 ### SQL
 
 ```sql
--- Your SQL here
+SELECT
+    EXTRACT(YEAR FROM sent_date) AS year,
+    COUNT(*) AS messages_sent
+FROM emails
+GROUP BY EXTRACT(YEAR FROM sent_date)
+ORDER BY year;
 ```
 
 ### Screenshot
