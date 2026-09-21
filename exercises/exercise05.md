@@ -1,4 +1,4 @@
-<img width="990" height="878" alt="image" src="https://github.com/user-attachments/assets/acb86c71-1ebe-4439-abdb-7c5fb0c11168" /># Exercise 05: SQLDA Database - Dates, Data Quality, Arrays, and JSON
+
 
 - Name:
 - Course: Database for Analytics
@@ -49,11 +49,12 @@ FROM emails
 ORDER BY year;
 ```
 
-### Screenshot
 
 ### Screenshot
 
-![Question 1 Screenshot](../screenshots/Question 1.png)
+![Question 1 Screenshot](../screenshots/Question%201.png)
+
+
 
 ---
 
