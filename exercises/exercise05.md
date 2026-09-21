@@ -50,9 +50,10 @@ ORDER BY year;
 ```
 
 
+
 ### Screenshot
 
-![Question 1 Screenshot](../screenshots/Question%201.png)
+![Question 1 Screenshot](../screenshots/Exercise%205%20Question%201.png)
 
 
 
@@ -84,7 +85,7 @@ ORDER BY year;
 
 ### Screenshot
 
-![Question 2 Screenshot](../screenshots/Question%202.png)
+![Question 2 Screenshot](../screenshots/Exercise%205%20Question%202.png)
 
 ---
 
@@ -110,9 +111,10 @@ WHERE sent_date IS NOT NULL
   AND opened_date IS NOT NULL;
 ```
 
+
 ### Screenshot
 
-![Question 3 Screenshot](../screenshots/Question%203.png)
+![Question 3 Screenshot](../screenshots/Exercise%205%20Question%203.png)
 
 ---
 
@@ -137,7 +139,8 @@ WHERE opened_date IS NOT NULL
 
 ### Screenshot
 
-![Question 4 Screenshot](../screenshots/Question%204.png)
+
+![Question 4 Screenshot](../screenshots/Exercise%205%20Question%204.png)
 
 ---
 
@@ -222,7 +225,7 @@ ORDER BY dealership_id;
 
 ### Screenshot
 
-![Question 7 Screenshot](../screenshots/Question%207.png)
+![Question 7 Screenshot](../screenshots/Exercise%205%20Question%207.png)
 
 ---
 
@@ -260,7 +263,7 @@ ORDER BY
 
 ### Screenshot
 
-![Question 8 Screenshot](../screenshots/Question%208.png)
+![Question 8 Screenshot](../screenshots/Exercise%205%20Question%208.png)
 
 ---
 
@@ -278,7 +281,7 @@ FROM customers;
 
 ### Screenshot
 
-![Question 9 Screenshot](../screenshots/Question%209.png)
+![Question 9 Screenshot](../screenshots/Exercise%205%20Question%209.png)
 
 ---
 
@@ -320,4 +323,4 @@ FROM (
 
 ### Screenshot
 
-![Question 10 Screenshot](../screenshots/Question%2010.png)
+![Question 10 Screenshot](../screenshots/Exercise%205%20Question%2010.png)
