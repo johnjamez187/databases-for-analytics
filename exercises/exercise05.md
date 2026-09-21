@@ -1,4 +1,4 @@
-# Exercise 05: SQLDA Database - Dates, Data Quality, Arrays, and JSON
+<img width="990" height="878" alt="image" src="https://github.com/user-attachments/assets/acb86c71-1ebe-4439-abdb-7c5fb0c11168" /># Exercise 05: SQLDA Database - Dates, Data Quality, Arrays, and JSON
 
 - Name:
 - Course: Database for Analytics
@@ -51,7 +51,7 @@ ORDER BY year;
 
 ### Screenshot
 
-![Q1 Screenshot](screenshots/q1_email_years.png)
+![Question 1 Screenshot](../screenshots/Question%201.png)
 
 ---
 
@@ -81,7 +81,7 @@ ORDER BY year;
 
 ### Screenshot
 
-![Q2 Screenshot](screenshots/q2_message_count_by_year.png)
+![Question 2 Screenshot](../screenshots/Question%202.png)
 
 ---
 
@@ -109,7 +109,7 @@ WHERE sent_date IS NOT NULL
 
 ### Screenshot
 
-![Q3 Screenshot](screenshots/q3_sent_opened_interval.png)
+![Question 3 Screenshot](../screenshots/Question%203.png)
 
 ---
 
@@ -122,12 +122,19 @@ show emails that contain an **opened date BEFORE the sent date**.
 ### SQL
 
 ```sql
--- Your SQL here
+SELECT
+    sent_date,
+    opened_date,
+    opened_date - sent_date AS interval
+FROM emails
+WHERE opened_date IS NOT NULL
+  AND sent_date IS NOT NULL
+  AND opened_date < sent_date;
 ```
 
 ### Screenshot
 
-![Q4 Screenshot](screenshots/q4_opened_before_sent.png)
+![Question 4 Screenshot](../screenshots/Question%204.png)
 
 ---
 
@@ -141,11 +148,11 @@ After looking at the data, **why is this the case?**
 
 ### Answer
 
-_Write your explanation here._
+There is probably a time zone difference between the two.
 
-### Screenshot (if requested by instructor)
 
-![Q5 Screenshot](screenshots/q5_explain_date_issue.png)
+
+
 
 ---
 
@@ -182,7 +189,7 @@ CREATE TEMP TABLE customer_dealership_distance AS (
 
 ### Answer
 
-_Write your explanation here._
+Created 3 separate, temporary, tables. This should be a distance relational data based on the point references, and it is separated by customer ids, dealership id, and distance from with the point from the dealership. 
 
 ---
 
@@ -202,12 +209,17 @@ For example - dealership 1 is below:
 ### SQL
 
 ```sql
--- Your SQL here
+SELECT
+    dealership_id,
+    ARRAY_AGG(last_name || ' ' || first_name) AS salespeople
+FROM salespeople
+GROUP BY dealership_id
+ORDER BY dealership_id;
 ```
 
 ### Screenshot
 
-![Q7 Screenshot](screenshots/q7_salespeople_array_by_dealership.png)
+![Question 7 Screenshot](../screenshots/Question%207.png)
 
 ---
 
@@ -228,12 +240,24 @@ Reference image:
 ### SQL
 
 ```sql
--- Your SQL here
+SELECT
+    d.dealership_id,
+    d.state,
+    ARRAY_AGG(s.first_name || ' ' || s.last_name) AS salespeople,
+    COUNT(s.salesperson_id) AS number_of_salespeople
+FROM dealerships AS d
+JOIN salespeople AS s
+    ON d.dealership_id = s.dealership_id
+GROUP BY
+    d.dealership_id,
+    d.state
+ORDER BY
+    d.state;
 ```
 
 ### Screenshot
 
-![Q8 Screenshot](screenshots/q8_salespeople_array_state_count.png)
+![Question 8 Screenshot](../screenshots/Question%208.png)
 
 ---
 
@@ -245,12 +269,13 @@ the **customers** table to **JSON**.
 ### SQL
 
 ```sql
--- Your SQL here
+SELECT row_to_json(customers)
+FROM customers;
 ```
 
 ### Screenshot
 
-![Q9 Screenshot](screenshots/q9_customers_to_json.png)
+![Question 9 Screenshot](../screenshots/Question%209.png)
 
 ---
 
@@ -272,9 +297,24 @@ Reference image:
 ### SQL
 
 ```sql
--- Your SQL here
+SELECT row_to_json(dealership_data)
+FROM (
+    SELECT
+        d.dealership_id,
+        d.state,
+        ARRAY_AGG(s.first_name || ' ' || s.last_name) AS salespeople,
+        COUNT(s.salesperson_id) AS number_of_salespeople
+    FROM dealerships AS d
+    JOIN salespeople AS s
+        ON d.dealership_id = s.dealership_id
+    GROUP BY
+        d.dealership_id,
+        d.state
+    ORDER BY
+        d.state
+) AS dealership_data;
 ```
 
 ### Screenshot
 
-![Q10 Screenshot](screenshots/q10_salespeople_array_to_json.png)
+![Question 10 Screenshot](../screenshots/Question%2010.png)
