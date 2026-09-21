@@ -51,7 +51,9 @@ ORDER BY year;
 
 ### Screenshot
 
-![Question 1 Screenshot](../screenshots/Question%201.png)
+### Screenshot
+
+![Question 1 Screenshot](../screenshots/Question 1.png)
 
 ---
 
