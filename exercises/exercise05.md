@@ -43,7 +43,10 @@ year
 ### SQL
 
 ```sql
--- Your SQL here
+SELECT DISTINCT
+    EXTRACT(YEAR FROM sent_date) AS year
+FROM emails
+ORDER BY year;
 ```
 
 ### Screenshot
