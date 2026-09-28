@@ -119,14 +119,8 @@ Save your diagram image in this repo and embed it below.
 
 In 1-2 short paragraphs, explain:
 
-- What dimensions you chose and why
-- Why your fact table grain is daily sales
-- How your design supports at least 3 of the required analytics questions
-
 - I chose date, customer, and part dimensions because they provide needed information for analysis. The dates were provided so that they could show by specific date, month, quarter, and year. The customer dimension was chosen because it helps analysis by part number and product category. The table grain of daily sales including date, customer, part, amount, and quantity is so that it can support the needed questions that we needed provide it for. 
 
 #### Design Notes
-
-_Write your design notes here._
 
 Design was assembled so that the main table was in the center with all other tables pointing directly to it in this star schema. 
