@@ -10,10 +10,11 @@ SQL analysis.
 
 ## Initial Data Source
 
-The data for this project came from the nflverse NFL data repository in GitHub.
-https://github.com/nflverse/nfldata/blob/master/data/draft_picks.csv?
-https://github.com/nflverse/nfldata/blob/master/data/rosters.csv?
-https://github.com/nflverse/nfldata/blob/master/data/games.csv?
+The data for this project came from the nflverse NFL data repository on GitHub.
+
+- [NFL Games Data](https://github.com/nflverse/nfldata/blob/master/data/games.csv)
+- [NFL Rosters Data](https://github.com/nflverse/nfldata/blob/master/data/rosters.csv)
+- [NFL Draft Picks Data](https://github.com/nflverse/nfldata/blob/master/data/draft_picks.csv)
 
 The project uses three CSV files:
 
