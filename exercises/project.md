@@ -166,7 +166,7 @@ WHERE table_schema = 'public'
 ORDER BY table_name, ordinal_position;
 ```
 
-![NFL table row counts](./screenshots/nfl-row-counts.png)
+![NFL database table row counts](./screenshots/Database%20tables%20and%20row%20counts.png)
 
 This query returned 68 columns across the three tables and confirmed
 that the database contains `DATE`, `INTEGER`, `NUMERIC`, and `TEXT`
