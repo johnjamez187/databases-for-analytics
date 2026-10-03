@@ -230,7 +230,7 @@ GROUP BY season
 ORDER BY season DESC;
 ```
 
-![Kansas City Chiefs wins by season](./screenshots/chiefs-wins-by-season.png)
+![Kansas City Chiefs wins by season](./screenshots/Wins%20by%20season.png)
 
 I had to use the where or statements properly in order to get the full amount of wins for the chiefs each season. I couldn't find a way to do it without this where/or statement. The Group by allowed me to see the wins specifically per season. One thing to note on this data, is the wins for the current season is incomplete. If you were to do further analysis you should not include the current season so that you do not skew your results.
 
@@ -266,7 +266,7 @@ ORDER BY d.season DESC, d.round, d.pick
 LIMIT 50;
 ```
 
-![Kansas City Chiefs draft and roster join](./screenshots/chiefs-draft-roster-join.png)
+![Kansas City Chiefs draft picks and roster join](./screenshots/JOIN.png)
 
 This displayed the player's draft season, draft round, overall pick, name and position with other information from the roster table. *NOTE* some players appear more than once because they can have many records in the roster data.
 
