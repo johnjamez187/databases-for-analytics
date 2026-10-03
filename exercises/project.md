@@ -187,7 +187,7 @@ This will allow you to display a sample NFL records including; season, game date
 
 ### Rosters
 
-The rosters talbe contains 28617 rows and 12 columns. You can further do analysis with the following:
+The rosters table contains 28617 rows and 12 columns. You can further do analysis with the following:
 
 ```sql
 SELECT *
@@ -195,7 +195,7 @@ FROM rosters
 LIMIT 10;
 ```
 
-This will allow you to display sample rosters including; seaosn, team, player name, position, games, and starts.
+This will allow you to display sample rosters including; season, team, player name, position, games, and starts.
 
 ### Draft Picks
 
@@ -236,7 +236,7 @@ I had to use the where or statements properly in order to get the full amount of
 
 ### Joining Draft Picks and Rosters
 
-I think this is one of the most useful sections for data analysis within the NFL. I first tried to match the draft_picks.player_id to the rosters.playerid which returned zero matching rows. I then looked further at the data I had and tried draft_picks.pfr_id with rosters.playerid with the follow code:
+I think this is one of the most useful sections for data analysis within the NFL. I first tried to match the draft_picks.player_id to the rosters.playerid which returned zero matching rows. I then looked further at the data I had and tried draft_picks.pfr_id with rosters.playerid with the following code:
 
 ```sql
 SELECT
@@ -245,6 +245,9 @@ FROM draft_picks d
 JOIN rosters r
     ON d.pfr_id = r.playerid;
 ```
+
+
+![Draft picks and rosters join results](screenshots/JOIN.png)
 
 This gave me 19818 matching rows which showed that these fields could be used to connect the two tables. I then wanted to display these for the Kansas City Chiefs so I used the code:
 
@@ -274,7 +277,7 @@ This displayed the player's draft season, draft round, overall pick, name and po
 
 This was a fun project that allowed me to find a public dataset, use that public dataset to create a PostgreSQL database, import CSV data, validate records, and conduct data analysis with SQL.
 
-The final NFL database contains three tables and 48418 total records. The games talbe contains 7548 records, rosters table contains 28617 records, and the draft picks table contains 12253 records.
+The final NFL database contains three tables and 48418 total records. The games table contains 7548 records, rosters table contains 28617 records, and the draft picks table contains 12253 records.
 
 One of the most important lessons I learned is when importing the CSV file the data must be examined fully before importing it into a database. I had to correct the table structure to allow the data to be imported without discarding the records.
 
